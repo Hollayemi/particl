@@ -1,0 +1,331 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left_lcon_section{
+    width:70px;
+    position: fixed;
+    height:100%;
+    left:0;
+    top:0;
+    background-color: rgb(17, 17, 17);
+}
+.left_lcon_section h3{
+    color:#fff;
+    font-size:22px;
+    font-weight: bold;
+}
+.left_lcon_section div{
+    background-color: rgb(33, 33, 33);
+    margin-top:15px;
+    height:50px;
+    width: 50px;
+    margin-left:8px;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px #000;
+    transition: .3s;
+    cursor: pointer;
+}
+.left_lcon_section div:hover{
+    background-color: rgb(2, 58, 41) !important;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+.active{
+    background-color: rgb(14, 194, 140) !important;
+}
+.left_nav_tabs{
+    width:300px;
+    position: fixed;
+    height:100%;
+    left:70px;
+    top:0;
+    background-color: rgb(38, 38, 38);
+}
+.left_nav_tabs div img{
+    width:200px;
+    margin-left:50px;
+    margin-top:30px;
+    height:170px;
+}
+.iconBottomLeft{
+    position: absolute;
+    bottom:5px;
+}
+.divider{
+    width:100%;
+    height:2px;
+    margin:4px 0px;;
+    box-shadow: 0px 1px 1px 1px rgb(38, 38, 38);
+    background-color: rgb(67, 66, 66);
+    border-radius:5%;
+}
+.overviewFaIcona{
+    color:rgb(68, 68, 68);
+    font-size:22px;
+    padding-left:35px;
+}
+.left_nav_links{
+    display: flex;
+    align-items: center;
+}
+.left_nav_links p{
+    color: #fff !important;
+    padding-left:35px;
+    font-size:18px;
+    text-transform: uppercase;   
+}
+.angleUp, .walletAngleUp{
+    font-size:22px;
+    transform: scale(1);
+    
+}
+.showMarket button{
+    border:none;
+    background-color: transparent;
+    padding-left:40px;
+    width:99%;
+}
+.marketDiv,
+.walletDiv{
+    display:flex;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 20px;
+    margin-top:20px;
+    height:30px;
+}
+.marketDiv h3, .marketDiv i, .walletDiv i, .walletDiv h3{
+    font-weight: normal;
+    color: rgb(85, 85, 85);
+    transition:.3s;
+}
+.marketing_sub,
+.walletSec{
+    display:flex;
+    justify-content: left;
+    padding: 0px 0px;
+    align-items: center;
+    margin-top:10px;
+    height:35px;
+    cursor: pointer;
+}
+.marketing_sub:hover i,
+.walletSec:hover i{
+    color:rgb(14, 194, 140);
+}
+.marketing_sub:hover p,
+.walletSec :hover p{
+    color:rgb(187, 182, 182);
+}
+.marketing_sub i,
+.walletSec i{
+    font-size:20px;
+    color:#fff;
+}
+.marketing_sub p,
+.walletSec p{
+    padding-left:50px;
+    font-size:15px;
+    font-weight:bold;
+    color:rgb(221, 216, 216);
+    text-transform: uppercase;
+}
+.showMarket,
+.ShowwalletSec{
+    transition:.5s;
+    overflow:hidden;
+    background-color: rgb(43, 43, 43);
+}
+.cont{
+    margin-left:35px;
+    color:rgb(174, 172, 172);
+
+}
+
+
+
+
+
+
+
+
+
+
+/* /////////////     main side  .////////////////////////////// */
+
+.mainSide{
+    width:calc(100% - 370px);
+    background-color: rgb(243, 245, 241);
+    margin-left:370px;
+}
+.mainSideTopMost{
+    position: fixed;
+    top:0;
+}
+
+.mainSideTopMost,.secTopMost{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height:80px;
+    width:100%;
+    margin-left:-20px;
+    color: #fff;
+    background-color: rgb(15, 191, 158);
+    border-bottom: 1px solid rgb(204, 202, 202);
+}
+.secTopMost{
+    position: fixed;
+    top:80px;
+    color: rgb(29, 29, 29);
+}
+.mainSideTopMost_1{
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    padding:0px 50px;
+}
+
+.mainSideTopMost_2,.mainSideTopMost_3 {
+    width:15%;
+    text-align: center;
+    border-left: 1px solid rgb(204, 202, 202);
+}
+
+/* secTopMost */
+
+.secTopMost{
+    background-color: rgba(253, 247, 247, 0.961) !important;
+}
+.secTopMost_1,.secTopMost_2,.secTopMost_3{
+    width:25%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* -----------eachFrame---------- */
+
+.eachFrame{
+    background-color: #fff;
+    min-width:300px;
+    overflow: hidden;
+    height:450px;
+    margin:10px;
+    border-radius:8px;
+    box-shadow: 0px 2px 2px 4px rgba(102, 102, 102, 0.103);
+}
+.eachFrame .eachImage img{
+    width:100%;
+    height:320px !important;
+}
+.eachFrame .eachAbout h3{
+    padding-left:30px;
+    text-align: left;
+    color: rgb(19, 19, 19);
+}
+.eachFrame .eachAbout p{
+    color:rgb(75, 74, 74);
+    margin-top:10px;
+}
+.eachFrame .eachAbout span{
+    display: flex;
+}
+.eachFrame .eachAbout div{
+    display: flex;
+    justify-content: space-between;
+    padding-right:20px;
+    margin-top:20px;
+}
+.eachFrame .eachAbout p, .eachFrame .eachAbout span{
+    padding-left:30px;
+}
+.eachFrame .eachAbout span h4{
+    background-color:rgb(14, 194, 140);
+    color:#fff;
+    padding:5px;
+    border-radius:2px;
+    cursor: pointer;
+    border:2px solid rgb(14, 194, 140);
+    transition:.6s;
+
+}
+.eachFrame .eachAbout span h4:hover{
+    background-color:rgb(6, 138, 98);
+    border-color: rgb(6, 138, 98);
+}
+
+.eachFrame .eachAbout span h4 i{
+    transition:.3s
+}
+.eachFrame .eachAbout span h4:hover i{
+    transform: scale(1.5);
+}
+
+.eachFrame_Body{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:175px;
+    
+}
+
+
+
+
+
+
+
+
+
+/*..........................//////////////// sell ///////////........................................ */
+
+.mainSide{
+    padding-left:20px;
+}
+.topNote{
+    padding:230px 50px 0px 40px;
+}
+.topNote h2{
+    font-size:30px;
+    padding-bottom:20px;
+    color: rgb(63, 63, 63);
+}
+.topNote h5{
+    font-size:18px;
+    font-weight: 500;
+    padding-bottom:20px;
+}
+.topNote p{
+    color: rgb(145, 145, 145);
+    font-size:15px;
+}
+
+/* new listing */
+
+.Add_new_listing button{
+    background-color: rgb(14, 194, 140);    
+    border:none;
+    color:#fff;
+    font-size:19px;
+    padding:10px 30px;
+    border-radius:5px;
+    
+}
+.Add_new_listing button i{
+background-color: #fff;
+color:rgb(14, 194, 140);  
+width:20px;  
+height:20px;
+border-radius:50%;
+font-size:18px;
+text-align: center;
+padding-top:1.5px;
+
+}
