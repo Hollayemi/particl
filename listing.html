@@ -54,10 +54,10 @@
             </div>
 
             <div class="ShowwalletSec" style="height:200px;">
-                <div class="walletSec"><i class="fa fa-ellipsis-h "></i><p>Send/Convert</p></div>
-                <div class="walletSec"><i class="fa fa-shopping-bag "></i><p>Receive</p></div>
-                <div class="walletSec"><i class="fa fa-diamond "></i><p>History</p></div>
-                <div class="walletSec"><i class="fa fa-user "></i><p>Address BOOK</p></div>
+                <button onclick="switchPage('Listing')"><div class="walletSec"><i class="fa fa-ellipsis-h "></i><p>Send/Convert</p></div></button>
+                <button onclick="switchPage('Listing')"><div class="walletSec"><i class="fa fa-shopping-bag "></i><p>Receive</p></div></button>
+                <button onclick="switchPage('Listing')"><div class="walletSec"><i class="fa fa-diamond "></i><p>History</p></div></button>
+                <button onclick="switchPage('Listing')"><div class="walletSec"><i class="fa fa-user "></i><p>Address BOOK</p></div></button>
             </div>
             <br>
 
@@ -309,7 +309,7 @@
 
 
     
-    <div class="mainSide" id="Sell" style="display:block;">
+    <div class="mainSide" id="Sell" style="display:none;">
             
         <div class="mainSideTopMost">
             <div class="mainSideTopMost_1">
@@ -355,19 +355,181 @@
 
         <!--  -->
 
-        <div>
-            <div class="Add_new_listing">
-                <button><i class="fa fa-plus"></i> Add new listing</button>
+        <div class="searchListins">
+            <div class="Add_new_listing_btn">
+                <button onclick="switchPage('Sell_Add_Item')"><i class="fa fa-plus"></i> Add new listing</button>
+                
+                <h2>SEARCH & SORT</h2>
+
+                <div class="div1">
+                    <form action="" method="POST">
+                        <input type="text" placeholder="Search Listings"><br>
+                        <select name="" id="">
+                            <option value="Sort listings">Sort listings</option>
+                        </select>
+                    </form>
+                </div>
+
+                <h2>FILTER BY STATUS</h2>
+                <div class="div1">
+                    <form action="" method="POST">
+                        <div class="flexradioBtn1">
+                            <label class="radioBtn1">
+                                <input type="radio" name="chooseBgType" id="yes" value="fix" checked class="bgRadioBtn">
+                                <span class="checkmark"></span>
+                            </label>
+                            <h5>All Listed</h5>
+                        </div>
+                        <div class="flexradioBtn1">
+                            <label class="radioBtn1">
+                                <input type="radio" name="chooseBgType" id="yes" value="rotate" class="bgRadioBtn">
+                                <span class="checkmark"></span>
+                            </label>
+                            <h5>Published</h5>
+                        </div>
+                        <div class="flexradioBtn1">
+                            <label class="radioBtn1">
+                                <input type="radio" name="chooseBgType" id="yes" value="rotate" class="bgRadioBtn">
+                                <span class="checkmark"></span>
+                            </label>
+                            <h5>Unpublished</h5>
+                        </div>
+                        
+                        
+                    </form>
+                </div>
             </div>
 
 
 
-            <div>
-
+            <div class="show_matched_list">
+                <h3>SORRY, NO MATCHING LISTINGS FOUND</h3>
             </div>
         </div>
         
     </div>
+
+
+
+
+
+
+
+
+<!-- Adding New Page -->
+
+
+
+
+
+
+<div class="mainSide" id="Sell_Add_Item" style="display:block;">
+            
+    <div class="mainSideTopMost">
+        <div class="mainSideTopMost_1">
+            <h3>Sell <i class="fa fa-caret-right"></i> ADD/EDIT ITEM</h3>
+            <h3><i class="fa fa-database"></i> 296.08308</h3>
+        </div>
+
+
+        <div class="mainSideTopMost_2" style="display: flex;justify-content: space-evenly;">
+            <h3><i class="fa fa-shopping-cart"></i> 20</h3>
+            <h3><i class="fa fa-code"></i> 10</h3>
+            <h3><i class="fa fa-lock"></i> 15</h3>
+        </div>
+
+
+        <div class="mainSideTopMost_3">
+            <h3><i class="fa fa-bug"></i></h3>
+        </div>
+    </div>
+
+    <div class="topNote" style="padding-top:120px;">
+        <h2>Add New Product For Sale</h2>
+        <div class="Sell_Add_Item_help" style="display: none;">
+            <h5>
+                Here you acn add a new Product for Sale on Particl Open Marketplace
+            </h5>
+            <p>
+                This product will be available for all users on Particl network
+            </p>
+        </div>
+        <i class="fa fa-question questionMark" style="transform:scale(1);" title="Help"></i>
+        <i class="fa fa-remove questionMarkCancel" style="transform:scale(0);" title="cancel"></i>
+    </div>
+
+
+
+    <div class="addNewProduct">
+        <div class="div1 div1Up">
+            <h2>Product Details</h2>
+
+            <div class="productDetails">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Product Name"><br>
+                    <textarea name="" id="" placeholder="Summary (short description)"></textarea><br>
+                    <textarea name="" id="" placeholder="Description" class="textarea2"></textarea>
+                </form>
+            </div>
+
+            <div class="div1">
+                <h2>Pricing</h2>
+    
+                <div class="productDetails">
+                    <form action="#" method="post">
+                        <input type="text" placeholder="Product Name"><br><br>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="div1 div1Up">
+            <h2>Product Details</h2>
+
+            <div class="productDetails">
+                <form action="#" method="post">
+                    <br>
+                    <div class="uploadPicturesSec">
+                        <p><i class="fa fa-file"></i> Upload A Photo</p>
+                    </div>
+                    <br>
+                    <p class="picUploadNote">
+                        Upload photos of your Product (first photo will be set as main feature image).
+                         Be sure to upload high quality & focused images in good lighting where possible. Max file size per image  is 2 MB <br><br><br><br>
+                    </p>
+                </form>
+            </div>
+
+            <div class="div1">
+                <h2>Shipping</h2>
+    
+                <div class="productDetails">
+                    <form action="#" method="post">
+                        <input type="text" placeholder="Shipping from (Your country)*"><br>
+                        <input type="text" placeholder="Domestic Price"><br>
+                        <input type="text" placeholder="International Price"><br>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <div>
+
+    </div>
+    
+        
+</div>
 
 
 

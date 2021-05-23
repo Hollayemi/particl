@@ -85,7 +85,7 @@
     transform: scale(1);
     
 }
-.showMarket button{
+.showMarket button, .ShowwalletSec button{
     border:none;
     background-color: transparent;
     padding-left:40px;
@@ -171,6 +171,7 @@
 }
 
 .mainSideTopMost,.secTopMost{
+    z-index:545565;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -309,23 +310,208 @@
 
 /* new listing */
 
-.Add_new_listing button{
+.Add_new_listing_btn button{
     background-color: rgb(14, 194, 140);    
     border:none;
     color:#fff;
     font-size:19px;
     padding:10px 30px;
     border-radius:5px;
+
     
 }
-.Add_new_listing button i{
-background-color: #fff;
-color:rgb(14, 194, 140);  
-width:20px;  
-height:20px;
-border-radius:50%;
-font-size:18px;
-text-align: center;
-padding-top:1.5px;
+.Add_new_listing_btn button i{
+    background-color: #fff;
+    color:rgb(14, 194, 140);  
+    width:20px;  
+    height:20px;
+    border-radius:50%;
+    font-size:18px;
+    text-align: center;
+    padding-top:1.5px;
+}
+.Add_new_listing_btn h2{
+    font-weight: normal;
+    margin:30px 0px;
+    color: rgb(92, 92, 92);
+    font-size:20px;
+}
+.Add_new_listing_btn input[type="text"], .Add_new_listing_btn select{
+    width:80%;
+    margin-left:10%;
+    height:50px;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+    font-weight: normal;
+    background-color: rgb(243, 239, 239);
+    border-bottom: 1px solid rgb(197, 194, 194);
+     
+}
+.Add_new_listing_btn select{
+    margin-top:30px;
+}
+.Add_new_listing_btn .div1{
+    background-color: rgb(243, 239, 239);
+    box-shadow: 0px 2px 2px 4px rgba(102, 102, 102, 0.103);
+    padding:15px 5px;
+    
+}
+.Add_new_listing_btn{
+    width: 30%;
+    
+}
+.show_matched_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px dashed rgb(197, 194, 194);
+    border-width:3px;
+    width:65%;
+    height:80%;
+}
+.show_matched_list h3{
+    color: rgb(148, 147, 147);
+}
+.searchListins{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+    padding:40px;
+}
 
+
+
+
+
+
+
+/* ///////////////////this is radio button */
+
+.radioBtn1{
+    width:27px;
+    height:25px;
+    border:2px solid rgb(14, 194, 140);    ;
+    border-radius:50%;
+    margin-left:10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+  }
+  .radioBtn1 input{
+    display:none;
+  }
+  .flexradioBtn1{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin-right:10px;
+    margin-top:10px;
+
+  }
+  .flexradioBtn1 h5{
+    font-weight: normal;
+    font-size:16px;
+    padding-left:15px;
+  }
+  .radioBtn1 .checkmark{
+    width:calc(100% - 6px);
+    height:calc(100% - 6px);
+    border-radius:50%;
+    background-color: rgb(14, 194, 140);    
+    
+    opacity:0;
+    transition:.5s;
+  }
+  .radioBtn1 input:checked + .checkmark{
+    display: inline-block;
+    opacity:1;
+    transition:.5s;
+  }
+  
+
+
+
+.questionMark, .questionMarkCancel{
+    float: right;
+    margin-top:-30px;
+    width:30px;
+    height:30px;
+    background-color: skyblue;
+    text-align: center;
+    color: #fff;
+    padding-top:9px;
+    cursor: pointer;
+    border-radius:50%;
+    transition: .5s;
+}
+.questionMark:hover, .questionMarkCancel:hover{
+    background-color: rgb(98, 172, 201);
+}
+
+
+  /* ///////////......................................productDetails........................////////////////////// */
+.addNewProduct{
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+}
+.addNewProduct .div1Up{
+    width:48%;
+}
+.addNewProduct .div1 h2{
+    margin-bottom:30px;
+    text-transform: uppercase;
+    margin-top:35px;
+    color: rgb(140, 139, 139);
+    font-size:20px;
+    font-weight: normal;
+}
+::placeholder{
+    color: rgb(14, 194, 140);    
+    
+}
+
+.productDetails{
+    width:100% !important;
+    box-shadow: 0px 2px 2px 4px rgba(102, 102, 102, 0.103);
+}
+.productDetails input{
+    height:40px;
+    padding-left:15px;
+    border: none;
+    width:80%;
+    margin:20px 0px 10px 10%;
+    border-bottom: 1px solid rgb(197, 194, 194);
+    background-color: transparent;
+}
+
+.productDetails textarea{
+    height:150px;
+    padding:15px;
+    border: none;
+    border-bottom: 1px solid rgb(197, 194, 194);
+    background-color: transparent;
+    width:80%;
+    margin-left:10%;
+    margin-bottom:5px;
+}
+.productDetails .textarea2{
+    height:250px;
+}
+.uploadPicturesSec{
+    height:200px;
+    margin:20px;
+    border: 1px dashed rgb(197, 194, 194);
+    border-width:2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(14, 194, 140)
+}
+.picUploadNote{
+    color: rgb(90, 90, 90);
+    margin:0px 20px;
 }

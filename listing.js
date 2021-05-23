@@ -51,3 +51,17 @@ function switchPage(PageName) {
     }
     document.getElementById(PageName).style.display = "block";  
 }
+
+document.querySelector('.questionMark').addEventListener('click', function(){
+    document.querySelector('.Sell_Add_Item_help').style.display   =  "block"
+    document.querySelector('.questionMark').style.transform       =  "scale(0)"
+    document.querySelector('.questionMarkCancel').style.transform =  "scale(1)"
+})
+
+
+
+document.querySelector('.questionMarkCancel').addEventListener('click', function(){
+    document.querySelector('.Sell_Add_Item_help').style.display   =  "none"
+    document.querySelector('.questionMark').style.transform       =  "scale(1)"
+    document.querySelector('.questionMarkCancel').style.transform =  "scale(0)"
+})
