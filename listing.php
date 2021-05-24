@@ -8,76 +8,78 @@
     <!-- links -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="listing.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     
     <div>
-        <div class="left_lcon_section">
-            <div><h3>D</h3></div>
-            <div class="active"><h3>M</h3></div>
-            <div><h3>W</h3></div>
-            <div><h3>+</h3></div>
-            <span class="iconBottomLeft">
-                <div><h3><i class="fa fa-question"></i></h3></div>
-                <div><h3><i class="fa fa-bug"></i></h3></div>
-            </span>
-        </div>
-
-        <div class="left_nav_tabs">
-            <div><img src="images/subscribe.png" alt=""></div>
-
-            <!-- divider -->
-            <div class="divider"></div>
-            <br>
-
-            <div class="left_nav_links"><i class="fa fa-th overviewFaIcona"></i><p>Overview</p></div>
-            <!-- divider  market-->
-            <div class="marketDiv" >
-                <h3>Market</h3>
-                <i class="fa fa-caret-up angleUp" style="color:rgb(14, 194, 140)"></i>
+        <div class="mainLeft">
+            <div class="left_lcon_section">
+                <div><a href="index.php"><h3>H</h3></a></div>
+                <div class="active"><h3>M</h3></div>
+                <div><h3>W</h3></div>
+                <div><h3>+</h3></div>
+                <span class="iconBottomLeft">
+                    <div><h3><i class="fa fa-question"></i></h3></div>
+                    <div><h3><i class="fa fa-bug"></i></h3></div>
+                </span>
             </div>
 
-            <div class="showMarket" style="height:150px;">
-                <button onclick="switchPage('Listing')"><div class="marketing_sub clickListing"><i class="fa fa-ellipsis-h "></i><p>Listing</p></div></button>
-                <button onclick="switchPage('Buy')"><div class="marketing_sub"><i class="fa fa-shopping-bag "></i><p>Buy</p></div></button>
-                <button onclick="switchPage('Sell')"><div class="marketing_sub"><i class="fa fa-shopping-basket "></i><p>Sell</p></div></button>
+            <div class="left_nav_tabs">
+                <div><img src="images/subscribe.png" alt=""></div>
+
+                <!-- divider -->
+                <div class="divider"></div>
+                <br>
+
+                <div class="left_nav_links"><i class="fa fa-th overviewFaIcona"></i><p>Overview</p></div>
+                <!-- divider  market-->
+                <div class="marketDiv" >
+                    <h3>Market</h3>
+                    <i class="fa fa-caret-up angleUp" style="color:rgb(14, 194, 140)"></i>
+                </div>
+
+                <div class="showMarket" style="height:150px;">
+                    <button onclick="switchPage('Listing')"><div class="marketing_sub clickListing"><i class="fa fa-ellipsis-h "></i><p>Listing</p></div></button>
+                    <button onclick="switchPage('Buy')"><div class="marketing_sub"><i class="fa fa-shopping-bag "></i><p>Buy</p></div></button>
+                    <button onclick="switchPage('Sell')"><div class="marketing_sub"><i class="fa fa-shopping-basket "></i><p>Sell</p></div></button>
+                </div>
+
+                <div class="divider"></div>
+
+
+                <!-- divider  Wallet-->
+
+                <div class="walletDiv" >
+                    <h3>Wallet</h3>
+                    <i class="fa fa-caret-up walletAngleUp" style="color:rgb(14, 194, 140)"></i>
+                </div>
+
+                <div class="ShowwalletSec" style="height:200px;">
+                    <button onclick="switchPage('Listing')"><div class="walletSec"><i class="fa fa-ellipsis-h "></i><p>Send/Convert</p></div></button>
+                    <button onclick="switchPage('Listing')"><div class="walletSec"><i class="fa fa-shopping-bag "></i><p>Receive</p></div></button>
+                    <button onclick="switchPage('Listing')"><div class="walletSec"><i class="fa fa-diamond "></i><p>History</p></div></button>
+                    <button onclick="switchPage('Listing')"><div class="walletSec"><i class="fa fa-user "></i><p>Address BOOK</p></div></button>
+                </div>
+                <br>
+
+                <!-- divider  Wallet-->
+
+                <div class="divider" ></div>
+                <div class="walletSec"><i class="fa fa-phone "></i><p>Proposals</p></div>
+                <div class="divider"></div>
+
+                <div class="cont">
+                    <h5>Client .2.0.0 alphat-testnet <br>Market 0.0.78 <br>Core 0.18.1.0</h5>
+                </div>
+
             </div>
-
-            <div class="divider"></div>
-
-
-            <!-- divider  Wallet-->
-
-            <div class="walletDiv" >
-                <h3>Wallet</h3>
-                <i class="fa fa-caret-up walletAngleUp" style="color:rgb(14, 194, 140)"></i>
-            </div>
-
-            <div class="ShowwalletSec" style="height:200px;">
-                <button onclick="switchPage('Listing')"><div class="walletSec"><i class="fa fa-ellipsis-h "></i><p>Send/Convert</p></div></button>
-                <button onclick="switchPage('Listing')"><div class="walletSec"><i class="fa fa-shopping-bag "></i><p>Receive</p></div></button>
-                <button onclick="switchPage('Listing')"><div class="walletSec"><i class="fa fa-diamond "></i><p>History</p></div></button>
-                <button onclick="switchPage('Listing')"><div class="walletSec"><i class="fa fa-user "></i><p>Address BOOK</p></div></button>
-            </div>
-            <br>
-
-            <!-- divider  Wallet-->
-
-            <div class="divider" ></div>
-            <div class="walletSec"><i class="fa fa-phone "></i><p>Proposals</p></div>
-            <div class="divider"></div>
-
-            <div class="cont">
-                <h5>Client .2.0.0 alphat-testnet <br>Market 0.0.78 <br>Core 0.18.1.0</h5>
-            </div>
-
-        </div>
         
-
+        </div>
         <!--Right side-->
 
 
-        <div class="mainSide" id="Listing" style="display:none;">
+        <div class="mainSide" id="Listing" style="display:block;">
             
             <div class="mainSideTopMost">
                 <div class="mainSideTopMost_1">
@@ -419,11 +421,36 @@
 <!-- Adding New Page -->
 
 
+<div class="mainSide" id="Buy" style="display:none;">
+            
+            <div class="mainSideTopMost">
+                <div class="mainSideTopMost_1">
+                    <h3>Sell <i class="fa fa-caret-right"></i> ADD/EDIT ITEM</h3>
+                    <h3><i class="fa fa-database"></i> 296.08308</h3>
+                </div>
+        
+        
+                <div class="mainSideTopMost_2" style="display: flex;justify-content: space-evenly;">
+                    <h3><i class="fa fa-shopping-cart"></i> 20</h3>
+                    <h3><i class="fa fa-code"></i> 10</h3>
+                    <h3><i class="fa fa-lock"></i> 15</h3>
+                </div>
+        
+        
+                <div class="mainSideTopMost_3">
+                    <h3><i class="fa fa-bug"></i></h3>
+                </div>
+            </div>
+
+            <div style="margin-top:300px">
+                <h1>Nthing Dey Here</h1>
+            </div>
+
+</div>
 
 
 
-
-<div class="mainSide" id="Sell_Add_Item" style="display:block;">
+<div class="mainSide" id="Sell_Add_Item" style="display:none;">
             
     <div class="mainSideTopMost">
         <div class="mainSideTopMost_1">
@@ -514,21 +541,9 @@
                 
             </div>
         </div>
-
-
-
-
-
     </div>
 
-
-
-
-    <div>
-
-    </div>
     
-        
 </div>
 
 

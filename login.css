@@ -1,0 +1,292 @@
+*{margin:0px;padding:0px;}
+
+body{
+    background-image: url('images/body-bg.png');
+}
+.loginSec{
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+.loginBody{
+    width:60%;
+}
+/* ==============================------------myLoginBox-----------------======================= */
+.myLoginBoxes{
+    width:100%;
+    overflow: hidden;
+    background-color: #000;
+    /* margin-top:50px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+.myTopLoginBox{
+    position: relative;
+    overflow: hidden;
+    width:140%;
+    height:600px;
+    background-color: rgb(14, 194, 140);
+    margin-left:-20%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index:20 !important;
+}
+.myBottomLoginBox{
+    width:100%;
+    height:350px;
+    background-color: rgb(85, 85, 85);
+    margin-top:-150px;
+    margin-left:0px;
+    
+}
+.topDivTitle{
+    background-color: #eee;
+    position: absolute;
+    width:100%;
+    height:50px;
+}
+.loingInput{
+    text-align: center;
+    transition:.5s;
+}
+.loingInput input{
+    width:40%;
+    height:50px;
+    padding-left:10px;
+}
+.submitLogin{
+    width:20% !important;
+    font-size:20px;
+    min-width:150px;
+    color:#fff;
+    font-weight: bold;
+    border:1px solid rgb(14, 194, 140);
+    background-color: rgb(14, 194, 140);
+    border-radius:5px;
+    border: none;
+    height:40px;
+    transition:.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.submitLogin:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 150px 0 rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    color: #fff;
+}
+.LoginSignUp{
+    Padding-top:200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.LoginSignUp div h3{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 150px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(14, 194, 140);
+    color: #fff;
+    border:1px solid rgb(14, 194, 140);
+    line-height:50px;
+    width:150px;
+    font-size:20px;
+    text-align: center;
+    border-radius:10px;
+    transition:.5s;
+}
+.LoginSignUp div h3:hover{
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1), 0 0px 0px 0 rgba(0, 0, 0, 0.1);
+    color: rgb(14, 194, 140);
+    background-color:transparent;
+}
+.ForgotPass{
+    text-align: center;
+    font-size:18px;
+    margin-top:40px;
+    cursor: pointer;
+}
+.ForgotPass a{
+    color: rgb(14, 194, 140);
+}
+.loginType{
+    color:#fff;
+    padding-right:20px;
+}
+
+input[type="radio"]{
+    width:20px;
+    height:20px;
+    cursor: pointer;
+}
+.getErrorInfo{
+    text-align:center;
+    line-height:50px;
+    color:red;
+    font-size:23px;
+}
+.NextLogin{
+    width:30%;
+    margin-left:35%;
+    line-height:40px;
+    font-size:20px;
+    min-width:150px;
+    color:#fff;
+    font-weight: bold;
+    border:1px solid rgb(14, 194, 140);
+    background-color: rgb(14, 194, 140);
+    border-radius:5px;
+    border: none;
+    height:40px;
+    transition:.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.NextLogin:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 150px 0 rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    color: #fff;
+}
+
+@media screen and (max-width:900px) {
+    .loginBody{
+        width:80%;
+    }
+}
+@media screen and (max-width:600px){
+    .loginBody{
+        width:95%;
+    }
+    .myLoginBoxes{
+        width:90%;
+        overflow: hidden;
+        background-color: #000;
+        margin-top:10px;
+        margin-left:5%;
+        height:90%;
+    }
+    .myTopLoginBox{
+        position: relative;
+        overflow: hidden;
+        width:160%;
+        margin-left:-30%;
+        height:500px;
+    }
+    .signupInput input{
+        height:40px !important;
+    }
+}
+
+
+
+@media screen and (max-width:500px){
+    .loginBody{
+        width:100%;
+    }
+    .myLoginBoxes{
+        width:90%;
+        margin-left:5%;
+    }
+    .loingInput input{
+        width:50%;
+        height:50px;
+        padding-left:10px;
+    }
+    .getErrorInfo{
+        font-size:20px;
+    }
+    
+}
+
+.no_txt{
+    background-color:#4CAF50;
+    border-radius:50% !important;
+    margin-bottom:10px !important;
+    color:#fff !important;
+}
+.no_pic img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+@media screen and (max-width:768px){
+    .no_txt{
+        width:50px;
+        height:50px;
+        text-align:center;
+        line-height:50px;
+    }
+}
+.reframePicm, .reframePic1{
+    height:100% !important;
+    width:100% !important;
+    border-radius:50%;
+}
+.tuma2{
+    margin-top:10px;
+    border: 1px solid #fff;
+    text-align:center;
+    height:100px;
+    width:100px; 
+    margin-left:calc(50% - 45px); 
+    border-radius:50%;
+}
+.mainEditBox{
+    display: block;
+    opacity:0;
+    height:500px;
+    margin-left:calc(50% - 300px);
+    z-index:5000;
+    width:400px;
+    visibility: hidden;
+    background-color: #444444;
+    position: fixed;
+    transition:1s;
+    margin-top:10px;
+    overflow: hidden ;
+}
+.mainEditBox::content{
+    opacity:0 !important;
+}
+.editTopbox{
+    position: absolute;
+    width:100%;
+    height:200px;
+    background-color:#4CAF50;
+    margin-left:-0%;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+}
+.editBottomBox{
+    position: absolute;
+    width:80%;
+    margin-left:10%;
+    height:10px;
+    bottom: 0;
+    background-color:#4CAF50;
+    border-top-left-radius:70%;
+    border-top-right-radius:70%;
+}
+@media screen and (max-width:400px){
+    
+    .myBottomLoginBox{
+        height:300px;
+    }
+    .LoginSignUp{
+        Padding-top:170px;
+    }
+    .LoginSignUp div h3{
+        width:130px;
+        font-size:18px;
+    }
+    .ForgotPass{
+        margin-top:30px;
+    }
+}
+.prev{
+    margin-top:-8px;
+    height:60px;
+    min-width:50px;
+    width:60px !important;
+    line-height:60px;border-radius:50%;
+    transform:rotate(90deg);
+    font-size:20px;
+    margin-left:calc(50% - 30px);
+}
